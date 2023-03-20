@@ -8,12 +8,13 @@
  *
  * Return: The array filled
  */
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c);
 {
 	unsigned int i;
 
 	char *str;
-		str = malloc (sizeof (char) * size);
+
+	str = malloc(sizeof(char) * size);
 	if (size == 0 || str == NULL)
 		return (NULL);
 
